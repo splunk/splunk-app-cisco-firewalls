@@ -1,0 +1,11 @@
+sourcetype,app,ids_type,vendor,product
+cisco_xml,,network,Cisco,IDS
+cisco_acs,cisco:acs,,Cisco,ACS
+cisco_asa,,,Cisco,ASA
+cisco_csa,,host,Cisco,CSA
+cisco_fwsm,,,Cisco,FWSM
+cisco_ids,,network,Cisco,IDS
+cisco_pix,,network,Cisco,Pix
+cisco_wap,,wireless,Cisco,"Wireless Access Point"
+cisco_firewall,,,Cisco,Firewall
+cisco_ios,,wireless,Cisco,IOS
