@@ -39,12 +39,12 @@
 			</filterset>
 		</copy>
 
-		<!-- TEMPORARY BLACKOUT UNTIL CONVERSION
 		<concat destfile="${build.dir}/default/eventtypes.conf" fixlastline="yes">
 			<fileset dir="${APP}/default/eventtypes.d" includes="*.conf"/>
 		</concat>
 		<echo>[concat] Created ${build.dir}/default/eventtypes.conf</echo>
 
+		<!-- TEMPORARY BLACKOUT UNTIL CONVERSION
 		<concat destfile="${build.dir}/default/macros.conf" fixlastline="yes">
 			<fileset dir="${APP}/default/macros.d" includes="*.conf"/>
 		</concat>
