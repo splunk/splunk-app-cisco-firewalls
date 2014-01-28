@@ -39,38 +39,26 @@
 			</filterset>
 		</copy>
 
-		<concat destfile="${build.dir}/default/eventtypes.conf" fixlastline="yes">
+		<concat destfile="${build.dir}/${APP}/default/eventtypes.conf" fixlastline="yes">
 			<fileset dir="${APP}/default/eventtypes.d" includes="*.conf"/>
 		</concat>
-		<echo>[concat] Created ${build.dir}/default/eventtypes.conf</echo>
+		<echo>[concat] Created ${build.dir}/${APP}/default/eventtypes.conf</echo>
 
-		<!-- TEMPORARY BLACKOUT UNTIL CONVERSION
-		<concat destfile="${build.dir}/default/macros.conf" fixlastline="yes">
-			<fileset dir="${APP}/default/macros.d" includes="*.conf"/>
-		</concat>
-		<echo>[concat] Created ${build.dir}/default/macros.conf</echo>
-
-		<concat destfile="${build.dir}/default/props.conf" fixlastline="yes">
+		<concat destfile="${build.dir}/${APP}/default/props.conf" fixlastline="yes">
 			<fileset dir="${APP}/default/props.d" includes="*.conf"/>
 		</concat>
-		<echo>[concat] Created ${build.dir}/default/props.conf</echo>
+		<echo>[concat] Created ${build.dir}/${APP}/default/props.conf</echo>
 
-		<concat destfile="${build.dir}/default/transforms.conf" fixlastline="yes">
+		<concat destfile="${build.dir}/${APP}/default/transforms.conf" fixlastline="yes">
 			<fileset dir="${APP}/default/transforms.d" includes="*.conf"/>
 		</concat>
-		<echo>[concat] Created ${build.dir}/default/transforms.conf</echo>
+		<echo>[concat] Created ${build.dir}/${APP}/default/transforms.conf</echo>
 
-		<concat destfile="${build.dir}/default/savedsearches.conf" fixlastline="yes">
-			<fileset dir="${APP}/default/savedsearches.d" includes="*.conf"/>
-			<filterchain>
-				<tokenfilter>
-					<filetokenizer/>
-					<replaceregex flags="gms" pattern="\\\s*[\r\n]+\s*" replace="" />
-				</tokenfilter>
-			</filterchain>
+		<concat destfile="${build.dir}/${APP}/default/tags.conf" fixlastline="yes">
+			<fileset dir="${APP}/default/tags.d" includes="*.conf"/>
 		</concat>
-		<echo>[concat] Created ${build.dir}/default/savedsearches.conf</echo>
-		END OF TEMPORARY BLACKOUT UNTIL CONVERSION -->
+		<echo>[concat] Created ${build.dir}/${APP}/default/tags.conf</echo>
+
 	</target>
 
 </project>
